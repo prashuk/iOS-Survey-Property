@@ -11,7 +11,7 @@ import Firebase
 import FirebaseCore
 import FirebaseFirestore
 
-class DashboardViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate,
+class NewProjectViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate,
 UINavigationControllerDelegate {
     
     var db: Firestore!
@@ -82,8 +82,8 @@ UINavigationControllerDelegate {
         toolBar.tintColor = UIColor.white
         toolBar.backgroundColor = UIColor.black
         
-        let defaultButton = UIBarButtonItem(title: "Default", style: UIBarButtonItem.Style.plain, target: self, action: #selector(DashboardViewController.tappedToolBarBtn))
-        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(DashboardViewController.donePressed))
+        let defaultButton = UIBarButtonItem(title: "Default", style: UIBarButtonItem.Style.plain, target: self, action: #selector(NewProjectViewController.tappedToolBarBtn))
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(NewProjectViewController.donePressed))
         let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
         toolBar.setItems([defaultButton,flexSpace,doneButton], animated: true)
         
